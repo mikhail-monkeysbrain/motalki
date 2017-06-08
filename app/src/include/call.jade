@@ -1,0 +1,18 @@
+.call
+	.container
+		.call_text Спасибо за интерес к нашей продукции!
+		.call_title
+			span Остались вопросы?
+			|  Наш специалист поможет найти ответы!
+		.call_form
+			.row
+				form(action='http://test.motalka.ru/#')
+					.col-lg-5.col-md-7.col-sm-8
+						label.call_field
+							input#boc_tel_h.form-control.block.phone_mask(type='text', name='boc_tel_h_footer', data-mask='+7 (999) 999-99-99', placeholder='+7 (___) ___- __- __')
+					.col-lg-2.col-md-3.col-sm-4.callback
+						button.btn_custom.btn-block Жду звонка!
+		#unsuccess_send(style='display: none')
+			span#unsuccess_message.btn_custom.btn-block ✘Введите номер
+		#success_send(style='display: none')
+			span#success_message.btn_custom.btn-block ✔Запрос отправлен

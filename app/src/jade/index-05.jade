@@ -1,0 +1,230 @@
+include blocks/head
+	block content
+	.index-05
+		header
+			include ../include/header-05.html 
+		br
+		.container
+			h2
+				|	Подмотка (крутилка, моталка) спидометра для ford focus 3 
+			.flex
+				.prew
+					a(data-fancybox='gallery', href='img/f-1__big.jpg').prew__big
+						img(src='img/f-1__big.jpg')
+					.prew--bottom
+						img(src='img/f-1.jpg' data-link="img/f-1__big.jpg").prew__small
+						img(src='img/f-2.jpg' data-link="img/f-2__big.jpg").prew__small
+						img(src='img/f-3.jpg' data-link="img/f-3__big.jpg").prew__small
+						img(src='img/video.png' data-link="https://www.youtube.com/embed/hrzZYrOOL34").prew__small.video 
+				include ../include/attr-left__05 
+		.container
+			.hide
+			.tabs
+				.tabs__wrapper.container
+					ul.tab
+						li
+							a(href='#tabs-1') Обзор
+						li
+							a(href='#tabs-2') Описание
+						li
+							a(href='#tabs-3') Характеристики
+						li
+							a(href='#tabs-4') Отзывы
+							span &nbsp; 57
+						li
+							a(href='#tabs-5') Вопросы и ответы
+							span &nbsp; 57
+						li
+							a(href='#tabs-6') Моталка
+					p.desktop__hide Обзор 
+						img(src="img/arrow.svg", alt="")
+					#tabs-1
+						p.tab__header
+							| Обзор
+						p
+							|	Не нашел контента в PSD
+					p.desktop__hide Описание
+						img(src="img/arrow.svg", alt="")
+					#tabs-2
+						p.tab__header
+							| Техническое обслуживание
+						p 
+							|	Универсальная крутилка (моталка, подмотка) - это специальное устройство, которое позволяет самостоятельно увеличить пробег автомобиля.
+						p 
+							|	Является полностью съемным. Не требует установки, никаких настроек не нужно. Необходимо только подключить устройство и сразу же начинается намотка пробега.
+							br
+							|	Предлагаемое нами устройство самое современное для накрутки пробега автомобиля. Купленный у нас прибор не вызывает никаких сбоев в электронной системе вашего автомобиля.
+						p 
+							|	Мы предлагаем купить только проверенную моталку пробега, которая будет исправно работать очень и очень долго. Тем более, что на все устройства, купленные в нашем магазине, предоставляется 5 лет бесплатной гарантии.
+						p
+							|	Укиверсальные Корректор спидометра может быть использован на нескольких автомобилях, что является несомненным плюсом.
+					p.desktop__hide Характеристики
+						img(src="img/arrow.svg", alt="")
+					#tabs-3.features
+						img(src="img/sheme.jpg")
+						.table
+							.table--line
+								p
+									|	Скорость накрутки:
+								p
+									|	до 2000 км/ч
+							.table--line
+								p
+									|	Подключение:
+								p
+									|	Самостоятельное подключение через диагностический разъем
+							.table--line
+								p
+									|	Материал:
+								p
+									|	Качественный ударопрочный пластик
+							.table--line
+								p
+									|	Размеры:
+								p
+									|	Длина 64 мм., Ширина 42мм„ Высота 22 мм.
+							.table--line
+								p
+									|	Питание:
+								p
+									|	12в из диагностического разъема, дополнительного подключения не требует
+					p.desktop__hide Отзывы
+						span &nbsp; 57
+						img(src="img/arrow.svg", alt="")
+					#tabs-4
+						.overflow-review.scroll__wrapper 
+							.pseudo
+							.scrollbar.custom__bar
+								- for (var y = 0; y < 14; y++)
+									.review
+										.review--header
+											p Владимир Епифанцев
+											p.review--header__date 26.05.2017
+										p
+											|	Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации дальнейших направлений развития. 
+											|	Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. 
+						button.button__hide Загрузить еще 
+						form(action="#").review--form
+							.left
+								input(type="text" placeholder="Введите ваше имя и фамилию").review--form__name
+								input(type="email" placeholder="Введите ваш адрес электронной почты").review--form__mail
+							.right
+								textarea(placeholder="Введите ваш отзыв").review--form__message
+							input(type="submit" value="Добавить отзыв") 
+					p.desktop__hide Вопросы и ответы
+						span &nbsp; 57
+						img(src="img/arrow.svg", alt="")
+					#tabs-5
+						.tabs__faq
+							.tabs__faq__header
+								.top Категории
+								ol
+									li
+										a(href='#tabs__faq-1') Вопросы по доставке
+									li
+										a(href='#tabs__faq-2') Вопросы по прибору
+									li
+										a(href='#tabs__faq-3') Вопросы по оплате
+							#tabs__faq-1.tabs__faq--item
+								.accordeon-js.accordeon
+									- for (var y = 0; y < 4; y++)
+										.ac
+											.ac_head Значимость этих проблем настолько очевидна, что сложившаяся структура?
+												img(src="img/arrow.svg").ac_head--arrow
+											.answer
+												p Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации дальнейших направлений развития. 
+							#tabs__faq-2.tabs__faq--item
+								.accordeon-js.accordeon
+									- for (var y = 0; y < 4; y++)
+										.ac
+											.ac_head Значимость этих проблем 
+												img(src="img/arrow.svg").ac_head--arrow
+											.answer
+												p Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации дальнейших направлений развития. 
+							#tabs__faq-3.tabs__faq--item
+								.accordeon-js.accordeon
+									- for (var y = 0; y < 4; y++)
+										.ac
+											.ac_head Значимость этих проблем настолько очевидна, что сложившаяся структура? Lorem ipsum.
+												img(src="img/arrow.svg").ac_head--arrow
+											.answer
+												p Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации дальнейших направлений развития. 
+					#tabs-6
+						p.tab__header
+							| Цена универсального прибора 
+							span.blue 3490 р.
+						include ../include/car--group
+					p.desktop__hide Описание
+						img(src="img/arrow.svg", alt="")
+		
+		.container
+			p Универсальная крутилка (моталка, подмотка) - это специальное устройство, которое позволяет самостоятельно увеличить пробег автомобиля.
+			p Является полностью съемным. Не требует установки, никаких настроек не нужно. Необходимо только подключить устройство и сразу же начинается намотка пробега.
+				br
+				|	Предлагаемое нами устройство самое современное для накрутки пробега автомобиля. Купленный у нас прибор не вызывает никаких сбоев в электронной системе вашего автомобиля.
+			p Универсальная крутилка (моталка, подмотка) - это специальное устройство, которое позволяет самостоятельно увеличить пробег автомобиля.
+			p Мы предлагаем купить только проверенную моталку пробега, которая будет исправно работать очень и очень долго. Тем более, что на все устройства, купленные в нашем магазине, предоставляется 5 лет бесплатной гарантии.
+			p Укиверсальные Корректор спидометра может быть использован на нескольких автомобилях, что является несомненным плюсом.
+		include ../include/sections__05
+		include ../include/sections
+		.container
+			.tabs__faq
+				.tabs__faq__header.lists
+					.top Содержание
+					ol
+						li
+							a(href='#tabs__faq-1') Преимущества универсальной крутилки спидометра
+						li
+							a(href='#tabs__faq-2') Как работает универсальный намочик пробега?
+						li
+							a(href='#tabs__faq-3') Как пользоваться прибором? (видеоинструкция)
+						li
+							a(href='#tabs__faq-4') Отзывы клиентов
+						li
+							a(href='#tabs__faq-5') Ваши преимущества до и после покупки прибор
+						li
+							a(href='#tabs__faq-6') Как сделать заказ?
+						li
+							a(href='#tabs__faq-7') Контакты
+				#tabs__faq-1.tabs__faq--item.em-2
+					h2 Преимущества универсальной крутилки спидометра:
+					p 
+						|	Универсальная крутилка спидометра – это самый современный прибор для намотки пробега электронных
+						br
+						|	спидометров. Прибор подключается к тестовому разъему OBDII, и взаимодействует с блоком управления через
+						br
+						|	CAN-шину, имитируя движение автомобиля. При этом данная крутилка не требует никакой дополнительной
+						br
+						|	инсталляции.
+					p		
+						|	К достоинствам, которые имеет CAN крутилка для спидометра можно отнести:
+					ol
+						li
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi eius accusamus quod laboriosam accusantium, debitis blanditiis aliquam voluptatibus eaque!
+						li
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi eius accusamus quod laboriosam accusantium, debitis blanditiis aliquam voluptatibus eaque!
+						li
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi eius accusamus quod laboriosam accusantium, debitis blanditiis aliquam voluptatibus eaque!
+				#tabs__faq-2.tabs__faq--item.em-2
+					h2 Преимущества 2
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur omnis temporibus quasi rerum vitae dolorum, ullam veniam odit sequi ipsa.
+				#tabs__faq-3.tabs__faq--item.em-2
+					h2 Преимущества универсальной крутилки спидометра:
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ea perspiciatis quidem sequi dolor minus iusto, ducimus possimus suscipit optio dolore fuga! Eos neque quam ducimus impedit, eius minus, optio.
+				#tabs__faq-4.tabs__faq--item.em-2
+					h2 Преимущества крутилки спидометра:
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi qui corrupti iure modi odit minima. Unde earum tenetur minima iure veniam esse, ab laboriosam mollitia voluptates atque blanditiis omnis at libero ad perferendis maxime, nisi iste rerum amet dolor.
+				#tabs__faq-5.tabs__faq--item.em-2
+					h2 Преимущества универсальной крутилки
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quasi pariatur nostrum corrupti ut sed laboriosam eius velit, debitis distinctio cum. Ipsum quis animi sed accusantium, consequatur rem pariatur inventore minima! Facere numquam eaque inventore suscipit laboriosam beatae ab quis exercitationem! Officia laborum aliquam eum hic velit assumenda, animi? Fugiat.
+				#tabs__faq-6.tabs__faq--item.em-2
+					h2 Крутилки спидометра:
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nostrum aspernatur ex cum dignissimos numquam asperiores provident, animi dolorem facilis pariatur, officia distinctio consectetur maiores quas, accusamus, iure odio explicabo facere mollitia earum unde illum soluta dolor! Minima, alias hic in cum id? Sapiente vero fugit sint rerum esse repellat beatae voluptatum? Ratione dolores odit sit, mollitia, eaque iure deleniti.
+				#tabs__faq-7.tabs__faq--item.em-2
+					h2 Lorem ipsum dolor.
+					p Lorem.
+		include ../include/advantages
+		include ../include/ordering 
+		include ../include/contacts
+		include ../include/call
+		include ../include/footer

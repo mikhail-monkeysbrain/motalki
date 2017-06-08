@@ -27,7 +27,8 @@ gulp.task('jade', function () {
 gulp.task('stylus', function(){
     return gulp.src('app/src/stylus/**/*.styl')
         .pipe(stylus({
-          'include css': true
+          'include css': true,
+          use:[prefixer('last 10 versions')]
     }))
         .pipe(gulp.dest('app/dist/css/'))
 });
