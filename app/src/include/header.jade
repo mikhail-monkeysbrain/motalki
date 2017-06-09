@@ -3,6 +3,17 @@
       .header_content
          .header_item.header_slogan
             .header_slogan_text Интернет-магазин по продаже приборов для самостоятельного увеличения пробега
+            .header_slogan--phone.visible-xs
+               p
+                  | Круглосуточно. Без выходных                
+                  a(href='tel:84996382937', title='8 (499) 638-2937')
+                     span 8 (499)
+                     |  638-2937
+               p.last.to_scroll
+                  | Звонок бесплатный                
+                  a(href='tel:88005000738', title='8 (800) 500-0738')
+                     span 8 (800)
+                     |  500-0738
          .visible-xs.header_menu
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-navigation-menu', aria-expanded='false')
                span.icon-bar
@@ -23,7 +34,7 @@
                |  500-0738
          .header_item.header_call.callback
             a.btn_custom.btn-block(href='http://test.motalka.ru/callback', title='Заказать звонок') Заказать звонок
-div(itemscope='', itemtype='http://schema.org/SiteNavigationElement')
+div(itemscope='', itemtype='http://schema.org/SiteNavigationElement').to_scroll
    ul.no-margin
       .menu.js-menu-sticky
          .container

@@ -1389,33 +1389,31 @@ select.form-control{background:#fff url(../image/icon-dropdown.png) no-repeat ce
 }
 
 .DivToScroll {
-  background-color: #F5F5F5;
-  border: 1px solid #DDDDDD;
-  border-radius: 4px 0 4px 0;
-  color: #3B3C3E;
-  font-size: 12px;
-  font-weight: bold;
-  left: -1px;
-  padding: 10px 7px 5px;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;
 }
 
 .DivWithScroll {
   height: 220px;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
+.DivWithScroll::-webkit-scrollbar {
   width: 6px;
 }
 
-::-webkit-scrollbar-track {
+.DivWithScroll::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: #dfecf7;
 }
 
-::-webkit-scrollbar-thumb {
+.DivWithScroll::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #2a82cc;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);

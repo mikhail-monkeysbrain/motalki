@@ -101,3 +101,20 @@ $(function(){
 		$('.overlay__parent').hide(500);
 	});
 });
+
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 122) {
+			console.log($(this).scrollTop());
+			$('.last.to_scroll').addClass('sticky');
+			$('.to_scroll').addClass('sticky');
+			$('.header_menu').addClass('sticky');
+		} else {
+			console.log($(this).scrollTop());
+			$('.last.to_scroll').removeClass('sticky');
+			$('.to_scroll').removeClass('sticky');
+			$('.header_menu').removeClass('sticky');
+		};
+	});
+});

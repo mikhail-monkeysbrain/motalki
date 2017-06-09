@@ -1,11 +1,14 @@
 media(maxWidth)
 	@media screen and (max-width: maxWidth)
 		{block}
+		
+body
+	font-family: 'Open Sans', sans-serif		
+
 *
 	padding 0
 	margin 0
 	box-shadow border-box
-	font-family: 'Open Sans'
 	
 .flex
 	display flex
@@ -132,16 +135,27 @@ media(maxWidth)
 		margin-right 2em
 		width: 370px
 		height: 408px
+		+media(1024px)
+			margin-right 0
 .table
 	&--line
 		width 100%
 		display flex
 		justify-content space-between	
+		padding-left 1em
+		background: #f2f2f4
+		+media(1024px)
+			background transparent !important
+		&:nth-child(2n)
+			background: #fff
 		p
 			color: #333333
 			font-family: "Open Sans"
 			font-size: 14px
 			font-weight: 600
+			&:nth-child(2n)
+				text-align right
+				padding-right 1em
 			&:nth-last-child(1)
 				color: #076abd
 
@@ -161,13 +175,15 @@ media(maxWidth)
 			display block !important
 	+media(1024px)
 		display none
-		padding 15px
+		padding 10px 20px
 		border: 1px solid #c1c1c1
 		background-color: rgba(7, 106, 189, 0)
 	p
 		margin 10px 0
 	&--header
 		display flex
+		+media(768px)
+			flex-direction column
 		p
 			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7)
 			color: #333333
@@ -177,6 +193,10 @@ media(maxWidth)
 			opacity: 0.5
 			font-size: 14px
 			font-weight: 300
+			+media(768px)
+				&::before
+					margin 0 !important
+					margin-right 1em !important
 			&::before
 				content ''
 				display inline-block
@@ -207,8 +227,12 @@ media(maxWidth)
 					transition: 0.5s ease all		
 		&__name
 			background: url("../img/form__name.png") 95% center no-repeat !important
+			+media(768px)
+				background #fff !important
 		&__mail
 			background: url("../img/form__mail.png") 95% center no-repeat !important
+			+media(768px)
+				background #fff !important
 		input
 			width: 359px
 			height: 43px
@@ -248,6 +272,10 @@ media(maxWidth)
 			padding 19px 17px
 			+media(800px)
 				width 100%
+			+media(768px)
+				width 100%
+				min-height 280px
+				background #fff
 .float
 	&__left
 		float left
@@ -290,12 +318,19 @@ media(maxWidth)
 				line-height: 18px
 				margin-right 1em
 				margin-left -2em
-
 		&__header
 			flex-shrink 0
 			margin-right 5%
 			max-width 25%
 			padding-left 2em
+			&.first
+				+media(1024px)
+					max-width: 100%
+					width: 100%
+					background: #fff
+					margin: 0
+					padding: 16px
+					padding-left: 2em
 			&.lists
 				+media(1024px)
 					width 100%
@@ -326,6 +361,7 @@ media(maxWidth)
 	border-radius: 6px
 	padding 20px 18px
 	padding-top 0
+	background #fff
 	position relative
 	&::after
 		content ''
@@ -590,33 +626,13 @@ p.ui-accordion-header-active
 	padding-right 10px
 	width 100%
 	margin 0 auto
-/*
-.custom__bar
-	min-height 200px
-	overflow hidden
-	overflow-y auto
-	z-index 1
-		
-.custom__bar::-webkit-scrollbar
-	width 5px
-	padding 5px 0
-	background-color #F5F5F5
-.custom__bar::-webkit-scrollbar
-	width 5px
-	padding 5px 0
-	background-color #F5F5F5
-.custom__bar::-webkit-scrollbar-thumb
-	border-radius 10px
-	background-color blue
-	background-image -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
-*/
 .model_search_group
 	+media(1024px)
 		display none 
 		
 
 .empty_header__05
-	background: #e8e9f1 url(../img/empty_header__05.jpg) no-repeat top right
+	background: #e8e9f1 url(../img/empty_header__05.jpg) no-repeat top right !important
 	margin-bottom: 0
 	min-height: 320px
 	
@@ -843,3 +859,141 @@ p.ui-accordion-header-active
 	
 .cursor__pointer
 	cursor pointer
+	
+.header_slogan--phone
+	text-align left
+	p
+		font-size 12px
+		color #fff
+		font-weight 300
+		&.last
+			border-top 1px solid #2871ae
+			padding-top 20px
+	a
+		font-size 16px
+		display block
+		color #fff
+		text-decoration none
+		&:hover
+			color #fff
+.menu_phone
+	display none
+.menu_call
+	width 100%
+	margin 0
+	padding 10px 15px
+
+.to_scroll
+	&.sticky
+		display block
+	+media(768px)
+		display none
+		position: fixed
+		z-index: 109
+		width: 100%
+		top: 78px
+.last.to_scroll
+	display: none
+	position: fixed
+	z-index: 109
+	width: 100%
+	top: 0
+	position: fixed
+	z-index: 109
+	background: #2a82cc
+	width: 100%
+	left: 0
+	top: -20px
+	padding-bottom: 17px
+	padding-left 10px
+	&.sticky
+		display block
+		
+.header_menu.sticky
+	margin-top: -55px
+	position: fixed
+	top: 75px
+	z-index: 9999
+	right: 17px
+	
+.tabs__faq__header
+	&.lists
+		+media(768px)
+			border: 7px solid #f2f2f2
+			padding: 30px
+			margin-left: 5%
+
+.used_item
+	border 0
+	+media(768px)
+		border: solid 7px #f2f2f4
+	
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5
+	+media(1024px)
+		background: #f2f2f4
+		padding: 15px
+		
+#tabs-5
+	.ac_head
+		&.js_up
+			background #fff
+		+media(768px)
+			padding-right: 3em
+			position: relative
+			img
+				position: absolute
+				right: 20px
+				top: calc(50% - 8px)
+				transition .5s ease all
+#tabs-5 
+	.ac_head.js_up
+		img
+			transform rotate(90deg)
+
+.border__gray
+	border: 7px solid #f2f2f4
+	padding: 15px
+	margin 0 15px 15px
+
+a
+	&.btn_custom
+		&.visible-sm
+			&.visible-xs
+				margin-top: 1em
+
+.owl-nav
+	+media(768px)
+		display: flex
+		justify-content: space-between
+		width: 100%
+		left: 0
+		top: auto
+		bottom 35px
+		
+.owl-dots
+	+media(768px)
+		display flex
+		justify-content center
+		width 95%
+		margin 10px auto
+
+.bonus_after,
+.bonus_before
+	&::before
+		+media(768px)
+			display none
+
+.bonus_after_2
+	+media(768px)
+		display none
+
+.container.bg_gray
+	background: #fff
+	+media(768px)
+		background #f2f2f4
+		padding 20px 0
+		margin-top 20px
+		
+.product-info .banner-left h3
+	+media(820px)
+		color: #076abd
