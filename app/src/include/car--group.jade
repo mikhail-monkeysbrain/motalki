@@ -1,84 +1,23 @@
-.model_search_group.container(style='\
-margin-bottom: 50px;\
-')
-	.model_search_name.col-lg-12.col-sm-12.col-xs-12.visible-xs
-	.model_search_list.tab-content
-		#modelGroup_1.tab-pane.active
-			.row
-				h3(style='\
-				margin-left: 20px;\
-				font-size: 16px;\
-				') Универсальные приборы подходят для слеюущих марок автомоблей:
-				.col-lg-2.col-sm-4.col-xs-6
-					ul
-						li
-							a(title='Audi', href='http://test.motalka.ru/audi/') Audi
-						li
-							a(title='BMW', href='http://test.motalka.ru/bmw/') BMW
-						li
-							a(title='Cadillac', href='http://test.motalka.ru/cadillac/') Cadillac
-						li
-							a(title='Chevrolet', href='http://test.motalka.ru/chevrolet/') Chevrolet
-						li
-							a(title='Citroen', href='http://test.motalka.ru/citroen/') Citroen
-				.col-lg-2.col-sm-4.col-xs-6
-					ul
-						li
-							a(title='Daewoo', href='http://test.motalka.ru/daewoo/') Daewoo
-						li
-							a(title='Fiat', href='http://test.motalka.ru/fiat/') Fiat
-						li
-							a(title='Ford', href='http://test.motalka.ru/ford/') Ford
-						li
-							a(title='Great Wall', href='http://test.motalka.ru/great-wall/') Great Wall
-						li
-							a(title='Honda', href='http://test.motalka.ru/honda/') Honda
-				.col-lg-2.col-sm-4.col-xs-6
-					ul
-						li
-							a(title='Hyundai', href='http://test.motalka.ru/hyundai/') Hyundai
-						li
-							a(title='Infiniti', href='http://test.motalka.ru/infiniti/') Infiniti
-						li
-							a(title='Jeep', href='http://test.motalka.ru/jeep/') Jeep
-						li
-							a(title='Kia', href='http://test.motalka.ru/kia/') Kia
-						li
-							a(title='Land-Rover', href='http://test.motalka.ru/land-rover/') Land-Rover
-				.col-lg-2.col-sm-4.col-xs-6
-					ul
-						li
-							a(title='Lexus', href='http://test.motalka.ru/lexus/') Lexus
-						li
-							a(title='Mazda', href='http://test.motalka.ru/mazda/') Mazda
-						li
-							a(title='Mercedes ', href='http://test.motalka.ru/mercedes/') Mercedes 
-						li
-							a(title='Mitsubishi', href='http://test.motalka.ru/mitsubishi/') Mitsubishi
-						li
-							a(title='Nissan', href='http://test.motalka.ru/nissan/') Nissan
-				.col-lg-2.col-sm-4.col-xs-6
-					ul
-						li
-							a(title='Opel', href='http://test.motalka.ru/opel/') Opel
-						li
-							a(title='Peugeot', href='http://test.motalka.ru/peugeot/') Peugeot
-						li
-							a(title='Renault', href='http://test.motalka.ru/renault/') Renault
-						li
-							a(title='Skoda', href='http://test.motalka.ru/skoda/') Skoda
-						li
-							a(title='SsangYong', href='http://test.motalka.ru/ssangyong/') SsangYong
-				.col-lg-2.col-sm-4.col-xs-6
-					ul
-						li
-							a(title='Suzuki', href='http://test.motalka.ru/suzuki/') Suzuki
-						li
-							a(title='Toyota', href='http://test.motalka.ru/toyota/') Toyota
-						li
-							a(title='Volkswagen', href='http://test.motalka.ru/volkswagen/') Volkswagen
-						li
-							a(title='Volvo', href='http://test.motalka.ru/volvo/') Volvo
-		p(style='text-align:center;')
-			a.btn_custom.hidden-sm.hidden-xs(href='#', title='Заказать звонок') Полный список совместимых автомобилей
-	.model_search_name_02.hidden-xs
+p.blue Универсальные приборы подходят для слеюущих марок автомоблей:
+.auto--list.DivToScroll
+	.auto--list__inner.DivWithScroll
+		- for (var y = 0; y < 6; y++)
+			.col-lg-2.col-sm-4.col-xs-12
+				ul.lh30
+					li
+						a(title='Audi', href='http://test.motalka.ru/audi/') Audi
+							span 1200
+					li
+						a(title='BMW', href='http://test.motalka.ru/bmw/') BMW
+							span 1200
+					li
+						a(title='Cadillac', href='http://test.motalka.ru/cadillac/') Cadillac
+							span 1200
+					li
+						a(title='Chevrolet', href='http://test.motalka.ru/chevrolet/') Chevrolet
+							span 1200
+					li
+						a(title='Citroen', href='http://test.motalka.ru/citroen/') Citroen
+							span 1200
+.center__flex
+	a.btn_custom(href='#', title='Заказать звонок') Полный список совместимых автомобилей

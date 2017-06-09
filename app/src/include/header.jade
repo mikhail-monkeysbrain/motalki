@@ -1,0 +1,74 @@
+.header
+   .container
+      .header_content
+         .header_item.header_slogan
+            .header_slogan_text Интернет-магазин по продаже приборов для самостоятельного увеличения пробега
+         .visible-xs.header_menu
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-navigation-menu', aria-expanded='false')
+               span.icon-bar
+               span.icon-bar
+               span.icon-bar
+         .header_item.header_logo(itemscope='', itemtype='http://schema.org/ImageObject')
+            a(href='http://test.motalka.ru/', title='Подмотка Крутилка спидометра Моталка Намотка спидометра Корректор')
+               img(src='http://test.motalka.ru/image/data/logo.png', alt='')
+         .header_item.header_phone
+            | Круглосуточно. Без выходных                
+            a(href='tel:84996382937', title='8 (499) 638-2937')
+               span 8 (499)
+               |  638-2937
+         .header_item.header_phone
+            | Звонок бесплатный                
+            a(href='tel:88005000738', title='8 (800) 500-0738')
+               span 8 (800)
+               |  500-0738
+         .header_item.header_call.callback
+            a.btn_custom.btn-block(href='http://test.motalka.ru/callback', title='Заказать звонок') Заказать звонок
+div(itemscope='', itemtype='http://schema.org/SiteNavigationElement')
+   ul.no-margin
+      .menu.js-menu-sticky
+         .container
+            .row
+               #main-navigation-menu.collapse.navbar-collapse
+                  ul.menu_node
+                     li
+                        a(title='О компании', href='http://test.motalka.ru/about_us', itemprop='discussionUrl') О компании
+                     li
+                        a(title='Вопросы и ответы', href='http://test.motalka.ru/faq', itemprop='discussionUrl') Вопросы и ответы
+                     li
+                        a(title='Гарантия', href='http://test.motalka.ru/rasshirennaya-garantiya', itemprop='discussionUrl') Гарантия
+                     li
+                        a(title='Доставка ', href='http://test.motalka.ru/delivery', itemprop='discussionUrl') Доставка 
+                     li
+                        a(title='Описание') Описание
+                        ul.sub-menu
+                           li
+                              a(href='http://test.motalka.ru/articles/', title='Статьи', itemprop='discussionUrl') Статьи
+                           li
+                              a(href='http://test.motalka.ru/tracking/', title='Отслеживание отправлений', itemprop='discussionUrl') Отслеживание отправлений
+                           li
+                              a(href='http://test.motalka.ru/connection', title='Подключение', itemprop='discussionUrl') Подключение
+                           li
+                              a(href='http://test.motalka.ru/options', title='Варианты комплектации', itemprop='discussionUrl') Варианты комплектации
+                     li
+                        a(href='http://test.motalka.ru/contacts', title='Контакты', itemprop='discussionUrl') Контакты
+               .clearfix.visible-xs.mobile_info
+                  .menu_phone
+                     a(title='8 (499) 638-2937', href='tel:84996382937')
+                        span 8 (499)
+                        |  638-2937
+                     .descr Круглосуточно. Без выходных
+                  .menu_call.callback
+                     a.btn_custom.btn-block(title='Заказать звонок', href='http://test.motalka.ru/callback') Заказать звонок
+.main_banner.empty_header.nopadding
+   .container
+      .row
+         h1 
+            |Универсальный прибор motalka.ru
+            br
+            |  с самым большим списком
+            br
+            |  поддерживаемых автомобилей
+         p.js-overlay__open Подходят всех легковых и грузовых автомобилей, 
+            span.blue.cursor__pointer имеющих диагностический 
+               br
+               | разъем ODB2

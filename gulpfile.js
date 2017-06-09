@@ -81,6 +81,7 @@ gulp.task('imagemin', function () {
 
 gulp.task('watch', function () {
     gulp.watch('app/src/jade/**/*.jade', ['jade']);
+    gulp.watch('app/src/include/**/*.jade', ['jade']);
     gulp.watch('app/src/stylus/**/*.styl', ['stylus']);
     gulp.watch('app/src/js/**/*.js', ['js']);
     gulp.watch('app/src/js/**/*.js', [(env.fy) ? 'browserify' : 'js']);

@@ -70,18 +70,34 @@ $( function() {
 	});
 } );
 
-/*
+
+$(function(){
+	$('.order_list').owlCarousel({
+	    loop:false,
+	    nav:true,
+	    margin:0,
+	    navText: [],
+	    items:1
+	});
+});
+
+
 $(function(){
 	  if($(window).width() < 768) {
-	  	$('.order_list').owlCarousel({
-		    loop:false,
-		    nav:true,
-		    margin:0,
-		    navText: [],
-		    items:1
-  	});
+	  	$('.order_list').addClass('owl-carousel');
+			$('.order_list').owlCarousel();
+
 	  } else {
+	  	$('.order_list').removeClass('owl-carousel');
 			$('.order_list').owlCarousel('destroy');
 	  }
 });
-*/
+
+$(function(){
+	$('.js-overlay__open').click(function(){
+		$('.overlay__parent').show(500);
+	});
+	$('.close__overlay').click(function(){
+		$('.overlay__parent').hide(500);
+	});
+});

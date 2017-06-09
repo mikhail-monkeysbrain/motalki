@@ -1,7 +1,7 @@
 include blocks/head
 	block content
 		header
-			include ../include/header.html
+			include ../include/header.jade
 		br
 		.container
 			h2
@@ -14,7 +14,7 @@ include blocks/head
 						img(src='img/f-1.jpg' data-link="img/f-1__big.jpg").prew__small
 						img(src='img/f-2.jpg' data-link="img/f-2__big.jpg").prew__small
 						img(src='img/f-3.jpg' data-link="img/f-3__big.jpg").prew__small
-						img(src='img/video.png' data-link="https://www.youtube.com/embed/hrzZYrOOL34").prew__small.video 
+						img(src='img/video.png' data-link="https://www.youtube.com/embed/hrzZYrOOL34").prew__small.video
 				include ../include/attr-left 
 		.container
 			.hide
@@ -62,7 +62,7 @@ include blocks/head
 						.table
 							.table--line
 								p
-									|	Скорость накрутки:
+									|	Скорость накрутки: 
 								p
 									|	до 2000 км/ч
 							.table--line
@@ -123,7 +123,7 @@ include blocks/head
 									li
 										a(href='#tabs__faq-3') Вопросы по оплате
 							#tabs__faq-1.tabs__faq--item
-								.accordeon-js.accordeon
+								.accordeon-js.accordeon 
 									- for (var y = 0; y < 4; y++)
 										.ac
 											.ac_head Значимость этих проблем настолько очевидна, что сложившаяся структура?
@@ -177,7 +177,7 @@ include blocks/head
 						|	CAN-шину, имитируя движение автомобиля. При этом данная крутилка не требует никакой дополнительной
 						br
 						|	инсталляции.
-					p		
+					p
 						|	К достоинствам, которые имеет CAN крутилка для спидометра можно отнести:
 					ol
 						li
@@ -196,12 +196,13 @@ include blocks/head
 					h2 Преимущества крутилки спидометра:
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi qui corrupti iure modi odit minima. Unde earum tenetur minima iure veniam esse, ab laboriosam mollitia voluptates atque blanditiis omnis at libero ad perferendis maxime, nisi iste rerum amet dolor.
 				#tabs__faq-5.tabs__faq--item.em-2
-					h2 Преимущества универсальной крутилки
+					h2
+						|	Преимущества универсальной крутилки
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quasi pariatur nostrum corrupti ut sed laboriosam eius velit, debitis distinctio cum. Ipsum quis animi sed accusantium, consequatur rem pariatur inventore minima! Facere numquam eaque inventore suscipit laboriosam beatae ab quis exercitationem! Officia laborum aliquam eum hic velit assumenda, animi? Fugiat.
 				#tabs__faq-6.tabs__faq--item.em-2
 					h2 Крутилки спидометра:
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nostrum aspernatur ex cum dignissimos numquam asperiores provident, animi dolorem facilis pariatur, officia distinctio consectetur maiores quas, accusamus, iure odio explicabo facere mollitia earum unde illum soluta dolor! Minima, alias hic in cum id? Sapiente vero fugit sint rerum esse repellat beatae voluptatum? Ratione dolores odit sit, mollitia, eaque iure deleniti.
-				#tabs__faq-7.tabs__faq--item.em-2
+				#tabs__faq-7.tabs__faq--item.em-2 
 					h2 Lorem ipsum dolor.
 					p Lorem.
 		.container
@@ -244,8 +245,67 @@ include blocks/head
 							|	Работаю водителем уже 20 лет. Пытался самостоятельно намотать пробег, но все тщетно, т.к. иномарка дорогая и все потертости видно моментально. Купил тут прибор для своего автомобиля и теперь могу спокойно ждать своего начальника и наматывать пробег.
 			button.btn.btn__send-review.float__right Оставить свой отзыв
 			.clear
-		include ../include/advantages
-		include ../include/ordering 
+		include ../include/advantages 
+		include ../include/ordering
 		include ../include/contacts
 		include ../include/call
 		include ../include/footer
+	.overlay__parent
+		.overlay
+			.model_search.empty
+				.container
+					.model_search_filter
+						.model_search_head
+							img(src="img/close.svg").close__overlay
+							p Проверьте, подойдет ли
+								br
+								|	универсальная крутилка
+								br
+								|	на ваш автомобиль
+							form.model_search_form(action='http://test.motalka.ru/search')
+								.model_search_item.model_search_w_28
+									label
+										select#brends-select-1n.form-control.empty(name='category_id')
+											option(value='', disabled='', selected='') Марка
+											option(value='18', data-url='http://test.motalka.ru/audi/') Audi
+											option(value='60', data-url='http://test.motalka.ru/bmw/') BMW
+											option(value='76', data-url='http://test.motalka.ru/cadillac/') Cadillac
+											option(value='77', data-url='http://test.motalka.ru/chevrolet/') Chevrolet
+											option(value='91', data-url='http://test.motalka.ru/citroen/') Citroen
+											option(value='92', data-url='http://test.motalka.ru/daewoo/') Daewoo
+											option(value='25', data-url='http://test.motalka.ru/fiat/') Fiat
+											option(value='20', data-url='http://test.motalka.ru/ford/') Ford
+											option(value='96', data-url='http://test.motalka.ru/great-wall/') Great Wall
+											option(value='75', data-url='http://test.motalka.ru/honda/') Honda
+											option(value='78', data-url='http://test.motalka.ru/hyundai/') Hyundai
+											option(value='93', data-url='http://test.motalka.ru/infiniti/') Infiniti
+											option(value='97', data-url='http://test.motalka.ru/jeep/') Jeep
+											option(value='57', data-url='http://test.motalka.ru/kia/') Kia
+											option(value='74', data-url='http://test.motalka.ru/land-rover/') Land-Rover
+											option(value='79', data-url='http://test.motalka.ru/lexus/') Lexus
+											option(value='17', data-url='http://test.motalka.ru/mazda/') Mazda
+											option(value='62', data-url='http://test.motalka.ru/mercedes/') Mercedes 
+											option(value='73', data-url='http://test.motalka.ru/mitsubishi/') Mitsubishi
+											option(value='24', data-url='http://test.motalka.ru/nissan/') Nissan
+											option(value='65', data-url='http://test.motalka.ru/opel/') Opel
+											option(value='80', data-url='http://test.motalka.ru/peugeot/') Peugeot
+											option(value='72', data-url='http://test.motalka.ru/renault/') Renault
+											option(value='81', data-url='http://test.motalka.ru/skoda/') Skoda
+											option(value='33', data-url='http://test.motalka.ru/ssangyong/') SsangYong
+											option(value='59', data-url='http://test.motalka.ru/suzuki/') Suzuki
+											option(value='66', data-url='http://test.motalka.ru/toyota/') Toyota
+											option(value='71', data-url='http://test.motalka.ru/volkswagen/') Volkswagen
+											option(value='82', data-url='http://test.motalka.ru/volvo/') Volvo
+											option(value='61', data-url='http://test.motalka.ru/vaz/') ВАЗ (Lada) 
+											option(value='87', data-url='http://test.motalka.ru/gaz/') Газ
+											option(value='95', data-url='http://test.motalka.ru/uaz/') УАЗ
+											option(value='94', data-url='http://test.motalka.ru/iveco/') Iveco
+											option(value='83', data-url='http://test.motalka.ru/scania/') Scania
+											option(value='85', data-url='http://test.motalka.ru/kamaz/') Камаз
+											option(value='86', data-url='http://test.motalka.ru/maz/') Маз
+								.model_search_item.model_search_w_28
+									label
+										select#cars-select-1n.form-control.empty(name='product_id')
+											option(value='', disabled='', selected='') Модель
+								.model_search_item.model_search_w_16
+									a#search-block-submit-1n.btn_custom.btn-block(title='Узнать', href='http://test.motalka.ru/search') Узнать 
