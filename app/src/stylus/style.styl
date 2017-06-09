@@ -632,7 +632,7 @@ p.ui-accordion-header-active
 		
 
 .empty_header__05
-	background: #e8e9f1 url(../img/empty_header__05.jpg) no-repeat top right !important
+	background: #e8e9f1 url(../img/empty_header__05.jpg) no-repeat 30% top !important
 	margin-bottom: 0
 	min-height: 320px
 	
@@ -935,9 +935,6 @@ p.ui-accordion-header-active
 		
 #tabs-5
 	.ac_head
-		&.js_up
-			background #fff
-		+media(768px)
 			padding-right: 3em
 			position: relative
 			img
@@ -945,6 +942,8 @@ p.ui-accordion-header-active
 				right: 20px
 				top: calc(50% - 8px)
 				transition .5s ease all
+		&.js_up
+			background #fff
 #tabs-5 
 	.ac_head.js_up
 		img
